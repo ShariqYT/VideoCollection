@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    /* --primary-color:#0f0f0f;
+    --secondary-color: #fff; */
+    --primary-color: #fff;
+    --secondary-color: #0f0f0f;
+
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* Navigation Bar  */
+
+nav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav p {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+::placeholder{
+    color: black;
+}
+
+nav input{
+    font-style: italic;
+    padding-left: 5px;
+    width: 30%;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Navigation Bar 2  */
+
+section ul{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+}
+
+section li{
+    font-size: 1.3rem;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 30px;
+}
+
+main .video{
+    width: 100%;
+    border-radius: 20px;
+}
