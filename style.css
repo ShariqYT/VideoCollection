@@ -11,12 +11,13 @@
     --primary-color: #fff;
     --secondary-color: #0f0f0f;
     --custom-color: rgba(0, 0, 0, 0.1);
-    --third-color: rgba(0, 0, 0, 0.05);
+    --third-color: rgba(0, 0, 0, 0.075);
 }
 
 .dark-mode{
     --primary-color:#0f0f0f;
     --secondary-color: #fff;
+    --third-color: rgb(34, 32, 32);
 }
 
 body {
@@ -69,7 +70,7 @@ nav p {
     color: var(--secondary-color);
 }
 
-::placeholder {
+nav ::placeholder {
     color: #fff;
     text-shadow: 1px 1px 5px #0f0f0f;
 }
@@ -245,7 +246,7 @@ footer p {
 
 .play-video video{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .right-sidebar{
@@ -260,7 +261,7 @@ footer p {
 
 .side-video-list img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .side-video-list .small-thumbnail{
@@ -272,7 +273,6 @@ footer p {
 }
 
 .play-video h3{
-    padding-top: 20px;
     font-weight: 600;
     font-size: 2rem;
 }
@@ -284,19 +284,162 @@ footer p {
     flex-wrap: wrap;
     margin-top: 10px;
     font-size: 1rem;
-    color: #5a5a5a;
+    color: var(--secondary-color);
 }
 
 .like a img{
-    width: 40%;
+    width: 20px;
     margin-right: 8px;
 }
 
 .like a{
-    background-color: var(--third-color);
-    border-radius: 20px;
-    padding:5px 10px;
     display: inline-flex;
     align-items: center;
     margin-left: 15px;
+    background-color: var(--third-color);
+    border-radius: 15px;
+    padding:5px 10px;
+}
+
+.vid-desc{
+    margin: 20px 0px;
+    background-color: var(--third-color);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.comments{
+    font-size: 1.4rem;
+    align-items: center;
+    margin: 50px 0px;
+    color: var(--secondary-color);
+}
+
+.comments input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+}
+
+.comments  ::placeholder {
+    color: var(--secondary-color);
+}
+
+
+
+/* --------------- Responsive Media ----------- */
+
+@media only screen and (max-width: 425px){
+    nav{
+        /* display: none; */
+        height: 50px;
+    }
+
+    nav .logo{
+        font-size: 1.4rem;
+    }
+
+    nav input{
+        display: none;
+    }
+
+    nav img {
+        height: 30px;
+    }
+
+    .container{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .right-sidebar{
+        flex-basis: 100%;
+    }
+
+    .play-video{
+        flex-basis: 100%;
+    }
+
+    .play-video video{
+        border-radius: 0px;
+    }
+
+    .play-video-info h3{
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+
+    .like{
+        margin-top: 15px;
+    }
+
+    .vid-desc{
+        margin-left:  15px;
+        margin-right:  15px;
+    }
+
+    .comments{
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+    .comments input{
+        margin-top: 10px;
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .side-video-list{
+        display: block;
+    }
+
+    .side-video-list img{
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+
+    .vid-info{
+        margin-left: 15px;
+    }
+
+    footer{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    .like a{
+        margin-right: -5px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    nav .logo{
+        font-size: 1rem;
+    }
+
+    nav img{
+        height: 20px;
+    }
+
+    .play-video-info h3{
+        font-size: 1rem;
+    }
+    
+    .like a{
+        margin-right: -15px;
+    }
+
+    .like a img{
+        width: 15px;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
 }
