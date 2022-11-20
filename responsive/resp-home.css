@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1126px){
+    section ul li{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1071px){
+    section ul li{
+        font-size: 1.2rem;
+    }
+    main p{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section ul{
+        display: block;
+        text-align: center;
+    }
+    section ul li{
+        font-size: 1.5rem;
+    }
+    main p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    nav input{
+        display: none;
+    }
+    nav .logo{
+        font-size: 2rem;
+    }
+    section{
+        margin-top: 40px;
+    }
+    section ul{
+        padding: 0px;
+        margin: 0px;
+    }
+    section ul li{
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    main img{
+        border-radius: 0;
+    }
+    main p{
+        font-size: 1.5em;
+    }
+
+    footer{
+        font-size: 1.2rem;
+    }
+}
