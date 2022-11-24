@@ -69,51 +69,6 @@ li {
     list-style: none;
 }
 
-.autocom-box::-webkit-scrollbar{
-    display: none;
-}
-
-.autocom-box :hover{
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-
-.autocom-box{
-    height: 300px ;
-    border: 3px solid red;
-    width: 39%;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    border-radius: 20px;
-    position: absolute;
-    top: 60px;
-    left: 687px;
-    overflow: scroll;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.autocom-box .video-search img{
-    border-radius:10px;
-    margin-right: 50px;
-    /* height: 10%; */
-}
-.autocom-box .video-search a{
-    display: flex;
-    align-items: center;
-}
-.autocom-box .video-search p{
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-}
-
-.autocom-box .video-search{
-    margin: 10px;
-    display: flex;
-    cursor: pointer;
-}
-
-
 /*----------- Navigation Bar -----------*/
 
 

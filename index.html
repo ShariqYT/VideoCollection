@@ -19,112 +19,7 @@
 
     <nav>
         <p class="logo"> <a href="https://shariqyt.github.io/VideoCollection/"> Video Collection </a> </p>
-        <input type="search" id="search-item" placeholder="Search">
-        <div class="autocom-box">
-            
-            <div class="video-search">
-                <a href="watch/watch_3D-Depth.html">
-                <img src="assets/img/3D Depth.png">
-                <p>3D-Depth</p>
-                </a>
-            </div>
-
-            <div class="video-search">
-                <a href="watch/watch_3D-Glow-Typography.html">
-                <img src="assets/img/3D Glow Typography.png">
-                <p>3D-Glow Typography</p>
-                </a>
-            </div>
-
-            <div class="video-search">
-                <a href="watch/watch_3D-Sphere.html">
-                    <img src="assets/img/3D sphere.png"></img>
-                    <p>3D-Sphere</p>
-                </a>
-            </div>
-
-            <div class="video-search">
-                <a href="watch/watch_Audio-Spectrum.html">
-                    <img src=" assets/img/Audio Spectrum.png"></img>
-                    <p>Audio Spectrum</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Cinematic-Intro.html">
-                    <img src=" assets/img/Cinematic Intro.png"></img>
-                    <p>Cinematic Intro</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Glitch-Nikon-Intro.html">
-                    <img src=" assets/img/Glitch main.png"></img>
-                    <p>Glitch Nikon Intro</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Overlay-Graphic-With-Line.html">
-                    <img src=" assets/img/Graphics With Line.png"></img>
-                    <p>Overlay Graphic With Line</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Ramzan-Reminder.html">
-                    <img src=" assets/img/Ramzan.png"></img>
-                    <p>Ramzan Reminder</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Modern-Text-Intro.html">
-                    <img src=" assets/img/Render.png"></img>
-                    <p>Modern Text Intro</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_RGB-Masking-Intro.html">
-                    <img src=" assets/img/RGB Masking.png"></img>
-                    <p>RGB Masking Intro</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Cool-Text-Intro.html">
-                    <img src=" assets/img/Shariq.png"></img>
-                    <p>Cool Text Intro</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Smooth-Text-Intro.html">
-                    <img src=" assets/img/Smooth Text.png"></img>
-                    <p>Smooth Text Intro</p>
-                </a>
-
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_YouTube-Subscribe-Animation.html">
-                    <img src="assets/img/Social Media Animation.png"></img>
-                    <p>YouTube Subscribe Animation</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Spider-Man-Eyes-Reacting.html">
-                    <img src=" assets/img/Spider-Man Eyes Reacting.png">
-                </img>
-                <p>Spider-Man Eyes Reacting</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Spider-Man-Web-Shooter.html">
-                    <img src=" assets/img/Spider-Man Web Shooter [Not Optimize].png">
-                    </img>
-                    <p>Spider-Man Web Shooter</p>
-                </a>
-            </div>
-            <div class="video-search">
-                <a href="watch/watch_Logo-Spread-Intro.html">
-                    <img src=" assets/img/Text_1.png"></img>
-                    <p>Logo Spread Intro</p>
-                </a>
-            </div>
-        </div>
+        <input type="search" placeholder="Search">
         <img id="icon" src="assets/img/moon.png" alt="">
     </nav>
 
@@ -167,14 +62,25 @@
         <a href=" https://shariqyt.github.io/VideoCollection/"> VideoCollection.in</a>
     </footer>
 
-    <script src="script.js"></script>
     <script>
         var loader = document.getElementById("preloader");
-
+        
         window.addEventListener("load", function(){
             loader.style.display = "none";
         });
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-mode");
+            if(document.body.classList.contains("dark-mode")){
+                icon.src = "assets/img/sun.png";
+            }else{
+                icon.src = "assets/img/moon.png";
+            }
+        }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
